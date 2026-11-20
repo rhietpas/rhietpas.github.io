@@ -90,20 +90,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // 6. Case Study & Essay Drawer
   const drawerContent = {
     'cgtxchange': {
-      kicker: 'Venture · Strategy · Architecture',
+      kicker: 'Marketplace · AI Diligence · Joint Venture',
       title: 'CGTxchange — Joint Venture of ASGCT & OXTL',
       sections: [
         {
-          label: 'The Initiative',
-          text: 'CGTxchange is a for-profit venture created as a joint effort between the American Society of Gene & Cell Therapy (ASGCT) and OXTL, designed to bring commercial agility and specialized digital capabilities to the cell and gene therapy ecosystem.'
+          label: 'The Problem',
+          text: 'Policy and market shifts have left hundreds of rare-disease cell and gene therapy programs shelved or underfunded—often not because the science failed, but because asset owners and potential partners lack an efficient way to find and evaluate each other.'
         },
         {
-          label: 'The Approach',
-          text: 'Serving as Senior Director, I lead platform strategy, cross-organizational technical alignment, and operational execution—bridging mission-driven scientific credibility with scalable commercial product delivery.'
+          label: 'The Platform',
+          text: 'Built jointly by ASGCT and Orphan Therapeutics Accelerator (OXTL), CGTxchange is a curated marketplace where program owners list clinical-stage and deprioritized CGT assets (in vivo viral GTx, ex vivo gene-modified cell therapies, ASOs) and investors or in-licensors review standardized scoring across competitive landscape, preclinical safety, and clinical efficacy alongside streamlined data rooms.'
         },
         {
-          label: 'The Impact',
-          text: 'Establishing a durable, high-trust digital foundation that connects stakeholders across research, clinical translation, and industry.'
+          label: 'My Role',
+          text: 'As Senior Director, I lead the technical architecture, AI-assisted diligence tooling, and operational rollout connecting asset listers with investors and licensing partners at cgtxchange.com.'
         }
       ]
     },
