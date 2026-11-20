@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Ryan Hietpas, MPA — Interactive Website Logic
+   Ryan Hietpas, MPA | Interactive Website Logic
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -272,7 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (response.ok) {
-          formStatus.textContent = `Message sent. Thank you, ${name}—I will be in touch soon.`;
+          formStatus.textContent = `Message sent. Thank you, ${name}. I will be in touch soon.`;
           contactForm.reset();
         } else {
           const data = await response.json().catch(() => ({}));
