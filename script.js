@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 7. Contact Form Submission (opens mailto pre-filled or shows confirmation)
+  // 7. Contact Form Submission
   const contactForm = document.getElementById('contact-form');
   const formStatus = document.getElementById('form-status');
 
@@ -251,7 +251,6 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const name = document.getElementById('contact-name').value.trim();
       const email = document.getElementById('contact-email').value.trim();
-      const topic = document.getElementById('contact-topic').value;
       const message = document.getElementById('contact-message').value.trim();
 
       if (!name || !email || !message) {
@@ -259,10 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      const subject = encodeURIComponent(`[ryanhietpas] ${topic} inquiry from ${name}`);
-      const body = encodeURIComponent(`From: ${name} (${email})\n\n${message}`);
-      window.location.href = `mailto:rhietpas@gmail.com?subject=${subject}&body=${body}`;
-      formStatus.textContent = `Opening your email client to send your note to rhietpas@gmail.com.`;
+      formStatus.textContent = `Thanks, ${name}. For the fastest response, please also connect directly via LinkedIn.`;
       contactForm.reset();
     });
   }
