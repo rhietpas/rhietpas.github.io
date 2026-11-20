@@ -108,12 +108,12 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     'asgct-web': {
-      kicker: 'Web Redesign · $500K Budget · 2× Award Winner',
+      kicker: 'Web Redesign · Three Properties · 2× Award Winner',
       title: 'ASGCT Three-Property Web Redesign',
       sections: [
         {
-          label: 'Scope & Budget Discipline',
-          text: 'Led the 2024–2025 redesign and launch of three distinct web properties—asgct.org, annualmeeting.asgct.org, and patienteducation.asgct.org—finishing within $5,000 of the $500,000 project budget.'
+          label: 'Scope & Delivery',
+          text: 'Led the 2024–2025 redesign and launch of three distinct web properties—asgct.org, annualmeeting.asgct.org, and patienteducation.asgct.org—delivering the multi-site program on budget.'
         },
         {
           label: 'Recognition',
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
           label: 'New Office Technology Build-Out',
-          text: 'Led the full technology build-out of ASGCT’s new office space—covering modern networking, door access and camera security, and smart display audio-visual systems in meeting rooms—while managing over $600,000 in annual software licensing and vendor agreements.'
+          text: 'Led the full technology build-out of ASGCT’s new office space—covering modern networking, door access and camera security, and smart display audio-visual systems in meeting rooms—while overseeing software licensing, renewals, and vendor agreements across the organization.'
         }
       ]
     },
