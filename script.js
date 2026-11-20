@@ -89,6 +89,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 6. Case Study & Essay Drawer
   const drawerContent = {
+    'cgtxchange': {
+      kicker: 'Venture · Strategy · Architecture',
+      title: 'CGTxchange — Joint Venture of ASGCT & OXTL',
+      sections: [
+        {
+          label: 'The Initiative',
+          text: 'CGTxchange is a for-profit venture created as a joint effort between the American Society of Gene & Cell Therapy (ASGCT) and OXTL, designed to bring commercial agility and specialized digital capabilities to the cell and gene therapy ecosystem.'
+        },
+        {
+          label: 'The Approach',
+          text: 'Serving as Senior Director, I lead platform strategy, cross-organizational technical alignment, and operational execution—bridging mission-driven scientific credibility with scalable commercial product delivery.'
+        },
+        {
+          label: 'The Impact',
+          text: 'Establishing a durable, high-trust digital foundation that connects stakeholders across research, clinical translation, and industry.'
+        }
+      ]
+    },
     'ai-governance': {
       kicker: 'AI Strategy · Policy · Enablement',
       title: 'Association AI Readiness & Governance Framework',
