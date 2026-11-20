@@ -242,12 +242,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 7. Contact Form Submission
+  // 7. Contact Form Submission via Formspree
   const contactForm = document.getElementById('contact-form');
   const formStatus = document.getElementById('form-status');
+  const submitBtn = document.getElementById('contact-submit-btn');
 
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const name = document.getElementById('contact-name').value.trim();
       const email = document.getElementById('contact-email').value.trim();
@@ -258,8 +259,33 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      formStatus.textContent = `Thanks, ${name}. For the fastest response, please also connect directly via LinkedIn.`;
-      contactForm.reset();
+      const originalBtnHTML = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span>Sending...</span>';
+      formStatus.textContent = '';
+
+      try {
+        const response = await fetch('https://formspree.io/f/mwlonvaw', {
+          method: 'POST',
+          headers: { Accept: 'application/json' },
+          body: new FormData(contactForm)
+        });
+
+        if (response.ok) {
+          formStatus.textContent = `Message sent. Thank you, ${name}—I will be in touch soon.`;
+          contactForm.reset();
+        } else {
+          const data = await response.json().catch(() => ({}));
+          formStatus.textContent = data.errors
+            ? data.errors.map((err) => err.message).join(', ')
+            : 'Unable to send right now. Please try connecting via LinkedIn.';
+        }
+      } catch {
+        formStatus.textContent = 'Network error while sending. Please try again or connect via LinkedIn.';
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnHTML;
+      }
     });
   }
 });
