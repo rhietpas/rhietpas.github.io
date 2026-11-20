@@ -335,8 +335,8 @@ button {
   padding-top: 1.75rem;
   border-top: 1px solid var(--border-hairline);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem 2.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem 2rem;
 }
 
 .meta-label {
@@ -349,9 +349,58 @@ button {
 }
 
 .meta-value {
-  font-size: 0.95rem;
+  font-size: 0.93rem;
   font-weight: 500;
   color: var(--text-primary);
+  margin: 0;
+  line-height: 1.45;
+}
+
+.timeline-bullets {
+  margin: 0 0 1.15rem;
+  padding-left: 1.15rem;
+  color: var(--text-secondary);
+  font-size: 0.93rem;
+  max-width: 64ch;
+}
+
+.timeline-bullets li {
+  margin-bottom: 0.4rem;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-hairline);
+}
+
+.award-item {
+  padding-block: 0.65rem;
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.award-year {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 0 0.2rem;
+}
+
+.award-title {
+  font-size: 0.94rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0 0 0.15rem;
+}
+
+.award-org {
+  font-size: 0.85rem;
+  color: var(--text-muted);
   margin: 0;
 }
 
@@ -936,6 +985,10 @@ button {
   .connect-grid {
     grid-template-columns: 1fr;
   }
+
+  .hero-meta-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 760px) {
@@ -963,7 +1016,8 @@ button {
 
   .hero-meta-strip,
   .prose-columns,
-  .initiatives-grid {
+  .initiatives-grid,
+  .awards-grid {
     grid-template-columns: 1fr;
   }
 

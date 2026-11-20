@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navItems = document.querySelectorAll('.nav-links a');
   const sections = document.querySelectorAll('main section[id]');
 
-  // 1. Sticky header scroll shadow
+  // 1. Sticky header scroll state
   const onScroll = () => {
     if (window.scrollY > 24) {
       header.classList.add('scrolled');
@@ -87,113 +87,101 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 6. Case Study & Essay Drawer
+  // 6. Case Study Slide-Over Drawer
   const drawerContent = {
     'cgtxchange': {
-      kicker: 'Marketplace · AI Diligence · Joint Venture',
-      title: 'CGTxchange — Joint Venture of ASGCT & OXTL',
+      kicker: 'Joint Venture · AI Marketplace · Security',
+      title: 'CGTxchange, LLC (ASGCT & OTXL)',
       sections: [
         {
           label: 'The Problem',
-          text: 'Policy and market shifts have left hundreds of rare-disease cell and gene therapy programs shelved or underfunded—often not because the science failed, but because asset owners and potential partners lack an efficient way to find and evaluate each other.'
+          text: 'Policy and market shifts have left hundreds of rare-disease cell and gene therapy programs shelved or underfunded—often because program owners and potential partners lack an efficient way to find and evaluate each other.'
         },
         {
           label: 'The Platform',
-          text: 'Built jointly by ASGCT and Orphan Therapeutics Accelerator (OXTL), CGTxchange is a curated marketplace where program owners list clinical-stage and deprioritized CGT assets (in vivo viral GTx, ex vivo gene-modified cell therapies, ASOs) and investors or in-licensors review standardized scoring across competitive landscape, preclinical safety, and clinical efficacy alongside streamlined data rooms.'
+          text: 'Built jointly by ASGCT and Orphan Therapeutics Accelerator (OTXL), CGTxchange is a curated, AI-enabled marketplace where program owners list clinical-stage and deprioritized CGT assets (in vivo viral GTx, ex vivo gene-modified cell therapies, ASOs) and investors or in-licensors review standardized scoring across competitive landscape, preclinical safety, and clinical efficacy alongside streamlined data rooms.'
         },
         {
           label: 'My Role',
-          text: 'As Senior Director, I lead the technical architecture, AI-assisted diligence tooling, and operational rollout connecting asset listers with investors and licensing partners at cgtxchange.com.'
+          text: 'I co-lead day-to-day management of CGTxchange, LLC, advise the ASGCT CEO (who sits on the CGTxchange board) on operational and development plans, and lead security and compliance—including penetration testing, a policy library, and third-party security assessments.'
+        }
+      ]
+    },
+    'asgct-web': {
+      kicker: 'Web Redesign · $500K Budget · 2× Award Winner',
+      title: 'ASGCT Three-Property Web Redesign',
+      sections: [
+        {
+          label: 'Scope & Budget Discipline',
+          text: 'Led the 2024–2025 redesign and launch of three distinct web properties—asgct.org, annualmeeting.asgct.org, and patienteducation.asgct.org—finishing within $5,000 of the $500,000 project budget.'
+        },
+        {
+          label: 'Recognition',
+          text: 'Earned a Gold Award for Best Website in the Association TRENDS All-Media Contest (TRENDY Awards, March 2026) and an Award of Distinction from the Communicator Awards (May 2026).'
+        }
+      ]
+    },
+    'systems-modernization': {
+      kicker: 'CRM · Finance · Annual Meeting',
+      title: 'Core Systems & Finance Modernization at ASGCT',
+      sections: [
+        {
+          label: 'Membership & Marketing',
+          text: 'Led adoption of HubSpot across development, marketing, and membership teams, improving event history tracking and data sharing between HubSpot and iMIS.'
+        },
+        {
+          label: 'Finance Modernization',
+          text: 'Partnered with the Finance Director to implement Ramp—replacing physically signed checks and emailed expense spreadsheets—and Sage Intacct, replacing a third-party accounting service.'
+        },
+        {
+          label: 'Annual Meeting Technology',
+          text: 'Implemented a new Annual Meeting registration system (MCI/Cvent) and led adoption of M-Events for Annual Meeting abstract management.'
         }
       ]
     },
     'ai-governance': {
-      kicker: 'AI Strategy · Policy · Enablement',
-      title: 'Association AI Readiness & Governance Framework',
+      kicker: 'AI Policy · Copilot & Claude · Staff Adoption',
+      title: 'Organization-Wide AI Governance & Rollout',
       sections: [
         {
-          label: 'The Challenge',
-          text: 'Across mission-driven organizations, individual staff members often experiment with generative AI tools in silos—creating uneven quality, data privacy exposure, and uncertainty around acceptable use.'
+          label: 'Policy & Executive Alignment',
+          text: 'Developed and led adoption of staff AI acceptable use policies at ASGCT, working directly with the CEO to define permissions, data-handling rules, and clear expectations.'
         },
         {
-          label: 'The Approach',
-          text: 'Designed a pragmatic, human-centered AI governance program: clear responsible-use guidelines, a vendor and data-classification rubric, and department-level workflow pilots focused on augmenting human judgment rather than replacing institutional expertise.'
-        },
-        {
-          label: 'The Outcome',
-          text: 'Established shared organizational fluency, reduced shadow-AI risk, and empowered cross-functional teams to evaluate AI-generated outputs critically while preserving the human connection central to member communities.'
+          label: 'Practical Deployment',
+          text: 'Rolled out Microsoft Copilot and Claude to staff with practical guidance on appropriate use, and enabled native AI features inside existing platforms like HubSpot under the same governance framework.'
         }
       ]
     },
-    'data-ecosystem': {
-      kicker: 'Architecture · Integration · Analytics',
-      title: 'Unified Member & Scientific Data Ecosystem',
+    'it-operations': {
+      kicker: 'IT Operations · Office Build-Out · Staffing',
+      title: 'In-House IT Transition & New Office Build-Out',
       sections: [
         {
-          label: 'The Challenge',
-          text: 'Scientific societies and associations frequently operate with member, abstract, event, and learning data fragmented across legacy systems—making holistic member engagement hard to measure.'
+          label: 'In-House IT Transition',
+          text: 'Transitioned day-to-day IT support from an external managed services provider (MSP) to an in-house IT Manager reporting to the Senior Director of Technology, improving response times and institutional knowledge.'
         },
         {
-          label: 'The Approach',
-          text: 'Architected clean integration pathways connecting core AMS/CRM records, educational platforms, and event touchpoints into a governed reporting layer with consistent identity resolution.'
-        },
-        {
-          label: 'The Outcome',
-          text: 'Delivered a reliable single source of truth for leadership and program teams, enabling faster strategic planning and more personalized, relevant member experiences.'
+          label: 'New Office Technology Build-Out',
+          text: 'Led the full technology build-out of ASGCT’s new office space—covering modern networking, door access and camera security, and smart display audio-visual systems in meeting rooms—while managing over $600,000 in annual software licensing and vendor agreements.'
         }
       ]
     },
-    'meeting-scale': {
-      kicker: 'Infrastructure · Reliability · UX',
-      title: 'Digital Platform & Annual Meeting Scale',
+    'msci-leadership': {
+      kicker: 'Strategic Planning · BI · Chapters',
+      title: 'MSCI Digital Operations & Remote Transition (2012–2023)',
       sections: [
         {
-          label: 'The Challenge',
-          text: 'Flagship scientific conferences and year-round educational programming place intense, spiky demand on web properties, authentication flows, and digital content delivery.'
+          label: 'Executive & Chapter Leadership',
+          text: 'Served on the four-person team that built MSCI’s short- and long-term strategic plan, managed the MSCI product council and five regional chapters, and led the Build-Now.org infrastructure investment campaign.'
         },
         {
-          label: 'The Approach',
-          text: 'Modernized core web architecture, streamlined single sign-on (SSO) journeys, and instituted pre-event load testing and observability playbooks with cross-functional staff.'
+          label: 'Platforms & Analytics',
+          text: 'Oversaw iMIS, Higher Logic, Informz, WordPress (2018 W³ Gold Award for msci.org), Sarus LMS, Concur synced to Dynamics, and a Tableau BI reporting site tracking membership, sales, conferences, and web activity—plus a custom web scholarship system that saved over 100 staff-hours per year.'
         },
         {
-          label: 'The Outcome',
-          text: 'Seamless digital reliability during peak global traffic windows, paired with a cleaner, more intuitive experience for researchers, clinicians, and attendees.'
-        }
-      ]
-    },
-    'security-resilience': {
-      kicker: 'Security · Risk · Governance',
-      title: 'Pragmatic Cybersecurity & Vendor Resilience',
-      sections: [
-        {
-          label: 'The Challenge',
-          text: 'Lean technology teams must protect sensitive member and organizational data against modern threats without introducing friction that slows down daily collaboration.'
-        },
-        {
-          label: 'The Approach',
-          text: 'Implemented risk-tiered vendor assessments, modern identity and access management (IAM), and practical, scenario-based staff security training.'
-        },
-        {
-          label: 'The Outcome',
-          text: 'Elevated organizational security posture and board-level risk visibility while keeping everyday workflows fast and frictionless.'
-        }
-      ]
-    },
-    'quiet-infrastructure': {
-      kicker: 'Perspective Note · 2 Min Read',
-      title: 'Quiet Infrastructure: Why Boring Systems Win',
-      sections: [
-        {
-          label: 'On Restraint in Technology Leadership',
-          text: 'In an era where every software vendor promises revolutionary transformation, the highest-leverage work a technology leader can do is often invisible: simplifying integrations, retiring brittle workarounds, and documenting clear ownership.'
-        },
-        {
-          label: 'Governance as an Enabler',
-          text: 'Drawing from public administration, good governance is never about bureaucracy for its own sake. Clear decision rights and thoughtful guardrails give teams the confidence to move faster—especially when adopting emerging tools like AI.'
-        },
-        {
-          label: 'Serving the Mission',
-          text: 'When infrastructure is quiet, dependable, and aligned with human workflows, staff spend less time fighting their tools and more time advancing the scientific and member communities they serve.'
+          label: 'Remote Transition & Security',
+          text: 'Led MSCI’s transition to all-remote staff operations (Teams, Zoom, cloud storage) and virtual member events with zero significant security breaches, backed by universal 2FA, encrypted VPN, and ongoing staff phishing and ransomware training.'
         }
       ]
     }
@@ -254,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 7. Contact Form Submission (Client-side validation & confirmation)
+  // 7. Contact Form Submission (opens mailto pre-filled or shows confirmation)
   const contactForm = document.getElementById('contact-form');
   const formStatus = document.getElementById('form-status');
 
@@ -263,6 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const name = document.getElementById('contact-name').value.trim();
       const email = document.getElementById('contact-email').value.trim();
+      const topic = document.getElementById('contact-topic').value;
       const message = document.getElementById('contact-message').value.trim();
 
       if (!name || !email || !message) {
@@ -270,7 +259,10 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      formStatus.textContent = `Thank you, ${name}. Your note is ready—feel free to connect directly via LinkedIn as well.`;
+      const subject = encodeURIComponent(`[ryanhietpas] ${topic} inquiry from ${name}`);
+      const body = encodeURIComponent(`From: ${name} (${email})\n\n${message}`);
+      window.location.href = `mailto:rhietpas@gmail.com?subject=${subject}&body=${body}`;
+      formStatus.textContent = `Opening your email client to send your note to rhietpas@gmail.com.`;
       contactForm.reset();
     });
   }
