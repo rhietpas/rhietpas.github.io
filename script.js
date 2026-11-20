@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 6. Case Study Slide-Over Drawer
+  // 6. Case Study Slide-Over Drawer (public-safe executive summaries)
   const drawerContent = {
     'cgtxchange': {
       kicker: 'Joint Venture · AI Marketplace · Security',
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
           label: 'My Role',
-          text: 'I co-lead day-to-day management of CGTxchange, LLC, advise the ASGCT CEO (who sits on the CGTxchange board) on operational and development plans, and lead security and compliance—including penetration testing, a policy library, and third-party security assessments.'
+          text: 'I co-lead day-to-day management of CGTxchange, LLC, advise board leadership on operational and development plans, and serve as designated Security Officer and Technology Lead—overseeing vendor agreements, third-party penetration testing, a formal security policy library, and data-protection governance.'
         }
       ]
     },
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
       sections: [
         {
           label: 'Scope & Delivery',
-          text: 'Led the 2024–2025 redesign and launch of three distinct web properties—asgct.org, annualmeeting.asgct.org, and patienteducation.asgct.org—delivering the multi-site program on budget.'
+          text: 'Led the 2024–2025 redesign and launch of three distinct public web properties—asgct.org, annualmeeting.asgct.org, and patienteducation.asgct.org—delivering the multi-site program on budget.'
         },
         {
           label: 'Recognition',
@@ -122,48 +122,48 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     'systems-modernization': {
-      kicker: 'CRM · Finance · Annual Meeting',
-      title: 'Core Systems & Finance Modernization at ASGCT',
+      kicker: 'Integration Architecture · Events · Finance',
+      title: 'Enterprise Systems & Event Ecosystem',
       sections: [
         {
-          label: 'Membership & Marketing',
-          text: 'Led adoption of HubSpot across development, marketing, and membership teams, improving event history tracking and data sharing between HubSpot and iMIS.'
+          label: 'System-of-Record Architecture',
+          text: 'Designed clean integration boundaries across membership, CRM, development, and marketing—keeping the AMS as the authoritative source of record and single sign-on identity provider while enabling reliable data sync into CRM and event platforms.'
         },
         {
-          label: 'Finance Modernization',
-          text: 'Partnered with the Finance Director to implement Ramp—replacing physically signed checks and emailed expense spreadsheets—and Sage Intacct, replacing a third-party accounting service.'
+          label: 'Annual Meeting & Scientific Events',
+          text: 'Led implementation and end-to-end integration testing across registration, exhibitor portals, abstract management, and attendee engagement tools to support high-volume scientific conferences.'
         },
         {
-          label: 'Annual Meeting Technology',
-          text: 'Implemented a new Annual Meeting registration system (MCI/Cvent) and led adoption of M-Events for Annual Meeting abstract management.'
+          label: 'Finance & Operations Modernization',
+          text: 'Partnered with Finance leadership to modernize expense management, spend tracking, and accounting workflows on modern cloud platforms.'
         }
       ]
     },
     'ai-governance': {
-      kicker: 'AI Policy · Copilot & Claude · Staff Adoption',
-      title: 'Organization-Wide AI Governance & Rollout',
+      kicker: 'AI Policy · Enterprise Rollout · Custom Prototypes',
+      title: 'Organization-Wide AI Governance & Adoption',
       sections: [
         {
-          label: 'Policy & Executive Alignment',
-          text: 'Developed and led adoption of staff AI acceptable use policies at ASGCT, working directly with the CEO to define permissions, data-handling rules, and clear expectations.'
+          label: 'Policy & Guardrails',
+          text: 'Partnered with executive leadership to author and maintain an AI Acceptable Use Policy—establishing clear human-review requirements, approved enterprise tools, and strict boundaries around member, financial, and unpublished scientific data.'
         },
         {
-          label: 'Practical Deployment',
-          text: 'Rolled out Microsoft Copilot and Claude to staff with practical guidance on appropriate use, and enabled native AI features inside existing platforms like HubSpot under the same governance framework.'
+          label: 'Rollout & Practical Tooling',
+          text: 'Guided staff adoption of enterprise AI platforms (Microsoft Copilot and Claude) and built targeted internal software prototypes with AI when off-the-shelf commercial tools were oversized or cost-prohibitive.'
         }
       ]
     },
     'it-operations': {
-      kicker: 'IT Operations · Office Build-Out · Staffing',
-      title: 'In-House IT Transition & New Office Build-Out',
+      kicker: 'IT Operations · Vendor Strategy · Office Build-Out',
+      title: 'In-House IT Transition & Infrastructure Modernization',
       sections: [
         {
-          label: 'In-House IT Transition',
-          text: 'Transitioned day-to-day IT support from an external managed services provider (MSP) to an in-house IT Manager reporting to the Senior Director of Technology, improving response times and institutional knowledge.'
+          label: 'In-House IT Leadership',
+          text: 'Transitioned day-to-day IT operations from an external managed services provider (MSP) to an in-house IT management model—separating daily support and device operations from executive systems architecture and vendor strategy.'
         },
         {
-          label: 'New Office Technology Build-Out',
-          text: 'Led the full technology build-out of ASGCT’s new office space—covering modern networking, door access and camera security, and smart display audio-visual systems in meeting rooms—while overseeing software licensing, renewals, and vendor agreements across the organization.'
+          label: 'Portfolio Discipline & Office Build-Out',
+          text: 'Consolidated redundant software licenses, instituted structured RFP and SOW contract reviews (covering data ownership, security, and liability), and led the full network, security, and A/V technology build-out for ASGCT’s new office.'
         }
       ]
     },
