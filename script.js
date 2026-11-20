@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
       sections: [
         {
           label: 'The Problem',
-          text: 'Policy and market shifts have left hundreds of rare-disease cell and gene therapy programs shelved or underfunded—often because program owners and potential partners lack an efficient way to find and evaluate each other.'
+          text: 'Policy and market shifts have left hundreds of rare-disease cell and gene therapy programs shelved or underfunded, often because program owners and potential partners lack an efficient way to find and evaluate each other.'
         },
         {
           label: 'The Platform',
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
           label: 'My Role',
-          text: 'I co-lead day-to-day management of CGTxchange, LLC, advise board leadership on operational and development plans, and serve as designated Security Officer and Technology Lead—overseeing vendor agreements, third-party penetration testing, a formal security policy library, and data-protection governance.'
+          text: 'I co-lead day-to-day management of CGTxchange, LLC, advise board leadership on operational and development plans, and serve as designated Security Officer and Technology Lead. That scope includes vendor agreements, third-party penetration testing, a formal security policy library, and data-protection governance.'
         }
       ]
     },
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
       sections: [
         {
           label: 'Scope & Delivery',
-          text: 'Led the 2024–2025 redesign and launch of three distinct public web properties—asgct.org, annualmeeting.asgct.org, and patienteducation.asgct.org—delivering the multi-site program on budget.'
+          text: 'Led the 2024–2025 redesign and launch of three distinct public web properties (asgct.org, annualmeeting.asgct.org, and patienteducation.asgct.org), delivering the multi-site program on budget.'
         },
         {
           label: 'Recognition',
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
       sections: [
         {
           label: 'System-of-Record Architecture',
-          text: 'Designed clean integration boundaries across membership, CRM, development, and marketing—keeping the AMS as the authoritative source of record and single sign-on identity provider while enabling reliable data sync into CRM and event platforms.'
+          text: 'Designed clean integration boundaries across membership, CRM, development, and marketing. The AMS remains the authoritative source of record and single sign-on identity provider while feeding reliable data syncs into CRM and event platforms.'
         },
         {
           label: 'Annual Meeting & Scientific Events',
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
       sections: [
         {
           label: 'Policy & Guardrails',
-          text: 'Partnered with executive leadership to author and maintain an AI Acceptable Use Policy—establishing clear human-review requirements, approved enterprise tools, and strict boundaries around member, financial, and unpublished scientific data.'
+          text: 'Partnered with executive leadership to author and maintain an AI Acceptable Use Policy that establishes clear human-review requirements, approved enterprise tools, and strict boundaries around member, financial, and unpublished scientific data.'
         },
         {
           label: 'Rollout & Practical Tooling',
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
       sections: [
         {
           label: 'In-House IT Leadership',
-          text: 'Transitioned day-to-day IT operations from an external managed services provider (MSP) to an in-house IT management model—separating daily support and device operations from executive systems architecture and vendor strategy.'
+          text: 'Transitioned day-to-day IT operations from an external managed services provider (MSP) to an in-house IT management model, separating daily support and device operations from executive systems architecture and vendor strategy.'
         },
         {
           label: 'Portfolio Discipline & Office Build-Out',
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
           label: 'Platforms & Analytics',
-          text: 'Oversaw iMIS, Higher Logic, Informz, WordPress (2018 W³ Gold Award for msci.org), Sarus LMS, Concur synced to Dynamics, and a Tableau BI reporting site tracking membership, sales, conferences, and web activity—plus a custom web scholarship system that saved over 100 staff-hours per year.'
+          text: 'Oversaw iMIS, Higher Logic, Informz, WordPress (2018 W³ Gold Award for msci.org), Sarus LMS, Concur synced to Dynamics, and a Tableau BI reporting site tracking membership, sales, conferences, and web activity. Also built a custom web scholarship system that saved over 100 staff-hours per year.'
         },
         {
           label: 'Remote Transition & Security',
